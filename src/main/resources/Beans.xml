@@ -5,10 +5,58 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 
-    <bean id="helloWorld" class="com.tokobuku.HelloWorld">
+    <bean id="helloWorld" class="com.tokobuku.hello.HelloWorld">
         <property name="message" value="Hello to the new World!"/>
         <property name="question" value="How are you?"/>
         <property name="origin" value="The Moon"/>
+    </bean>
+
+    <bean id="TheMercedes" class="com.tokobuku.vehicle.Car">
+        <constructor-arg type="java.lang.String">
+            <value>Mercedes-Benz</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>S-Class S550 4MATIC</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>4.7L V8 Twin Turbocharger</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>Automatic 7-Speed</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>Gasoline</value>
+        </constructor-arg>
+
+        <property name="motion" value="My human spirit is moving to the future. . ."/>
+    </bean>
+
+    <bean id="TheBmw" class="com.tokobuku.vehicle.Car">
+        <constructor-arg type="java.lang.String">
+            <value>BMW</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>7 Series 740Li</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>3.0L I6</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>Automatic 8-Speed</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>Gasoline</value>
+        </constructor-arg>
+
+        <property name="motion" value="I am moving with pleasure. What an ultimate experience. . ."/>
     </bean>
 
 </beans>

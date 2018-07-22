@@ -1,4 +1,4 @@
-package com.tokobuku;
+package com.tokobuku.hello;
 
 public class HelloWorld implements Hello {
 
