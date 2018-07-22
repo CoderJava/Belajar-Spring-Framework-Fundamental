@@ -10,4 +10,5 @@ mvn clean compile assembly:single
 ## BAB III
 ## Setter Injection dan Constructor Injection
 Setter Injection proses injeksinya dilakukan lewat setter method sedangkan, Constructor Injection proses injeksinya
-dilakukan lewat constructor.
+dilakukan lewat constructor. Dan kedua-duanya bisa digabungkan penggunaan-nya. Setter Injection pakai tag `<property>`
+sedangkan Constructor Injection pakai tag `<constructor-arg>`
