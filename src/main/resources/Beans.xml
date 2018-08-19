@@ -59,4 +59,13 @@
         <property name="motion" value="I am moving with pleasure. What an ultimate experience. . ."/>
     </bean>
 
+    <bean id="TheTraveler" class="com.tokobuku.traveler.Traveler">
+        <constructor-arg ref="TheHuman"/>
+    </bean>
+
+    <bean id="TheHuman" class="com.tokobuku.traveler.Human">
+        <property name="name" value="Yudi"/>
+        <property name="gender" value="M"/>
+    </bean>
+
 </beans>
